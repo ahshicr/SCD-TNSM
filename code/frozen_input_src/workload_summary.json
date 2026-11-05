@@ -1,0 +1,15 @@
+{
+  "active_minutes": 20160,
+  "functions": 9000,
+  "minutes": 20160,
+  "total_invocations": 12444637039,
+  "trigger_counts": {
+    "event": 743,
+    "http": 2551,
+    "orchestration": 569,
+    "others": 81,
+    "queue": 2110,
+    "storage": 240,
+    "timer": 2706
+  }
+}

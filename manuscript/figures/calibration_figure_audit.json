@@ -1,0 +1,19 @@
+{
+  "backend": "Python/matplotlib",
+  "width_in": 7.16,
+  "height_in": 3.78,
+  "cohort_rule": "All boards completing ten active power-calibration blocks",
+  "temperature_aggregation": "Maximum within each controller one-second bin; first randomized block",
+  "temperature_timestamp": "Midpoint of each controller send/receive envelope, not synchronized worker time",
+  "intervals": "Two-sided Student-t 95% across ten randomized blocks",
+  "guard_c": 65.0,
+  "guard_is_hardware_throttling_threshold": false,
+  "final_export_requested": true,
+  "layout_issues": [],
+  "source_sha256": {
+    "phases.jsonl": "0eacd4fd83ed9db0cc08adf69931c2bf68b5cfe8f2d9719875d23c576653a11a",
+    "thermal_samples.csv": "de60821576ad7aaff5b4cfa33020ad4423edf78f5a0087f93158844a5e834bbe",
+    "plateau_statistics.csv": "7483df21eb57b6f7e9d45abe814c230d829f012a0819ac8630dc228162122cfc",
+    "analysis.json": "ce9c62a0e195b4f4c90f53e4bd4a2579acf57ea5cf57f265a8a7b9bcc689b32f"
+  }
+}

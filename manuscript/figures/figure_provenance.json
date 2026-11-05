@@ -1,0 +1,95 @@
+{
+  "schema": "tnsm.strict-paper-figures.v1",
+  "status": "PASS",
+  "script": "\\\\[REDACTED-LAN-IP]\\TNSM-share\\TNSM\\revision_package\\code\\src\\strict_paper_figures.py",
+  "script_sha256": "71b0a96c65ee14c6d5d571473fdb9f250ce290696662debf77719fd1cdc5d0a2",
+  "campaigns": {
+    "main": {
+      "path": "\\\\[REDACTED-LAN-IP]\\TNSM-share\\TNSM\\revision_package\\code\\results\\strict\\campaign_formula_v7_20260914",
+      "protocol_sha256": "9bfbaaacebfbe33b3babf18b38b7e002baad072aab5a9af852fd480f0b4f53db",
+      "execution_source_sha256": {
+        "run_strict_campaign.py": "d93d8d9de637e838b41ed1b20c4a66b9c5a91a5c432e547635ebae4bdd54eec4",
+        "scheduler_core.py": "6c1411e697cf312e0fc96a8ad3bd01e566750e1e80d381bbafebc53cd05f04cb",
+        "strict_config.py": "5b594e73d39754f5d5c6f853c8d51ca747922ffa1a50f08aee9fb0cda2b5075c",
+        "strict_simulate.py": "14f4cf752eac9b4754c53a74bcd8968c94429c9b5ebba26e1c8edec66e9c6492",
+        "strict_trace.py": "ed328a7a518ae98abd003efc7025ef36df1f842aafcc7917d8a2dd02273ee035"
+      }
+    },
+    "network": {
+      "path": "\\\\[REDACTED-LAN-IP]\\TNSM-share\\TNSM\\revision_package\\code\\results\\strict\\network_stress_formula_v4_20260914",
+      "protocol_sha256": "914ecadce358093f69fe12a343e12f4f91f94f46d0c9ccd880aec88b221083a5",
+      "execution_source_sha256": {
+        "run_network_stress_extension.py": "4572b0026fb877982fff2d136ecfac651cfe28dbb249ab8cae5ac8fc134ad237",
+        "run_strict_campaign.py": "d93d8d9de637e838b41ed1b20c4a66b9c5a91a5c432e547635ebae4bdd54eec4",
+        "scheduler_core.py": "6c1411e697cf312e0fc96a8ad3bd01e566750e1e80d381bbafebc53cd05f04cb",
+        "strict_config.py": "5b594e73d39754f5d5c6f853c8d51ca747922ffa1a50f08aee9fb0cda2b5075c",
+        "strict_simulate.py": "14f4cf752eac9b4754c53a74bcd8968c94429c9b5ebba26e1c8edec66e9c6492",
+        "strict_trace.py": "ed328a7a518ae98abd003efc7025ef36df1f842aafcc7917d8a2dd02273ee035"
+      }
+    },
+    "deadline": {
+      "path": "\\\\[REDACTED-LAN-IP]\\TNSM-share\\TNSM\\revision_package\\code\\results\\strict\\deadline_guard_network_stress_v4_20260914",
+      "protocol_sha256": "b8d93b8b8a30573a680a3701e2542977b951758c19b58cf57fc65048bc4d26e3",
+      "execution_source_sha256": {
+        "run_deadline_guard_extension.py": "70122974fd2204562547d28413f40cf1ff8d7c3f423c8589653bcf32ceeba5cf",
+        "run_network_stress_extension.py": "4572b0026fb877982fff2d136ecfac651cfe28dbb249ab8cae5ac8fc134ad237",
+        "run_strict_campaign.py": "d93d8d9de637e838b41ed1b20c4a66b9c5a91a5c432e547635ebae4bdd54eec4",
+        "scheduler_core.py": "6c1411e697cf312e0fc96a8ad3bd01e566750e1e80d381bbafebc53cd05f04cb",
+        "strict_config.py": "5b594e73d39754f5d5c6f853c8d51ca747922ffa1a50f08aee9fb0cda2b5075c",
+        "strict_simulate.py": "14f4cf752eac9b4754c53a74bcd8968c94429c9b5ebba26e1c8edec66e9c6492",
+        "strict_trace.py": "ed328a7a518ae98abd003efc7025ef36df1f842aafcc7917d8a2dd02273ee035"
+      }
+    },
+    "load": {
+      "path": "\\\\[REDACTED-LAN-IP]\\TNSM-share\\TNSM\\revision_package\\code\\results\\strict\\load_scaling_formula_v2_20260914",
+      "protocol_sha256": "e379a6cd79563839adbde7918ace741e91e7b378e3df1baf218b10f3392463df",
+      "execution_source_sha256": {
+        "prepare_load_scaling_traces.py": "5267aadff2137f36b1c186f0210019ba6831fd593678567ce717b62ff4b51662",
+        "run_load_scaling_extension.py": "89a80dbd29f594fca89be308ab2687e32e727846acb194f711d3c974163e630f",
+        "run_strict_campaign.py": "d93d8d9de637e838b41ed1b20c4a66b9c5a91a5c432e547635ebae4bdd54eec4",
+        "scheduler_core.py": "6c1411e697cf312e0fc96a8ad3bd01e566750e1e80d381bbafebc53cd05f04cb",
+        "strict_config.py": "5b594e73d39754f5d5c6f853c8d51ca747922ffa1a50f08aee9fb0cda2b5075c",
+        "strict_simulate.py": "14f4cf752eac9b4754c53a74bcd8968c94429c9b5ebba26e1c8edec66e9c6492",
+        "strict_trace.py": "ed328a7a518ae98abd003efc7025ef36df1f842aafcc7917d8a2dd02273ee035"
+      }
+    },
+    "breakdown": {
+      "path": "\\\\[REDACTED-LAN-IP]\\TNSM-share\\TNSM\\revision_package\\code\\results\\strict\\breakdown_formula_v1_20260914",
+      "protocol_sha256": "1f5a9165aaaf1a5dbe84bd9120355bfcbfca5a7dfd29c03a80762d98e6d365da",
+      "execution_source_sha256": {
+        "prepare_breakdown_traces.py": "f71325b0865ba3672072fe66d53a9f00e5b82992c6701e4d7e7a314ada09b233",
+        "run_breakdown_extension.py": "e475d8bf5e1c52bf600b853bbef78b398420de01d841d44ad12e20906d254323",
+        "run_strict_campaign.py": "d93d8d9de637e838b41ed1b20c4a66b9c5a91a5c432e547635ebae4bdd54eec4",
+        "scheduler_core.py": "6c1411e697cf312e0fc96a8ad3bd01e566750e1e80d381bbafebc53cd05f04cb",
+        "strict_config.py": "5b594e73d39754f5d5c6f853c8d51ca747922ffa1a50f08aee9fb0cda2b5075c",
+        "strict_simulate.py": "14f4cf752eac9b4754c53a74bcd8968c94429c9b5ebba26e1c8edec66e9c6492",
+        "strict_trace.py": "ed328a7a518ae98abd003efc7025ef36df1f842aafcc7917d8a2dd02273ee035"
+      }
+    }
+  },
+  "outputs": {
+    "fig1_architecture.pdf": "37fc3e97938b8af8d82b0d716b5d5264c20bb14939af944e2248f3c89b207762",
+    "fig1_architecture.png": "e74e80d41ca8e24b55f8160c045478f8a75020601957b633c891b2ffb6a38f8f",
+    "fig1_architecture.svg": "e698d044a5534d36e63c6240f951b29cc72df49610435999b615c687357ddcde",
+    "fig2_primary.pdf": "a9af48a4bb7fd668f81112602aa19bca5c0dff91495b24ae431e762779c0ee92",
+    "fig2_primary.png": "9910ce4da8f0561b3fd69d1a5f47d2798792b099dc5cca06a736368f82092c74",
+    "fig2_primary.svg": "d947d2a68ac78646b49ced58c3a776050ec28fb4221072683d2f7c3895919e31",
+    "fig2_primary_source.csv": "3993da02be0d361c52e4208ad559a004a43b0bd347cf96edda06f2817d72a0f0",
+    "fig3_sampling_cache.pdf": "b378786049003a6097dbfe11779d7b7aada89a30d2e9a87309ce4a250444c61b",
+    "fig3_sampling_cache.png": "16668cc7f22aa9473923ae7d05aaa64b033ca4b151bf7d476bb201f8bb67a211",
+    "fig3_sampling_cache.svg": "f13b863026e697a520ddaeb2f3a857c40cd650e4dfd9629d8d8c6f88fe77db47",
+    "fig3_sampling_cache_source.csv": "6074c0de46e8f28aae76b55d1ad1b8efa25f1edd30b457ba5e1783fd036a0147",
+    "fig4_effects_stress.pdf": "84fa9c4419bdf683ef6cc6c038c53c622f02124664fcc6336d3697e784deb24a",
+    "fig4_effects_stress.png": "bc62f0d4051deaa0ce0c728ea88322343454b65bfa9b9591e2c5827c7ccc6637",
+    "fig4_effects_stress.svg": "ddb478e320f07f584a49f44af9601c8ade375b79d99e634dc64ff108dcec9e6a",
+    "fig4_effects_stress_source.csv": "9a4743207ab90cfcd2d081b6e1a8613a31b0689e02e0f072290fff3e51dedd19",
+    "figS_breakdown.pdf": "fc2d8537a6272a1de396f79fc563fda196eee7381834422da6bcb6c4c90c25bd",
+    "figS_breakdown.png": "8e87d78bcf09a1b137ead184be8a7664735d8789e93cedf6842307ed033350bd",
+    "figS_breakdown.svg": "90ba9d4a85a63ac1226ba74b166020ddb6b10f4239b98de0e747f8f58b266bd5",
+    "figS_breakdown_source.csv": "d59a7ccf9966109da122048bc3dc160c360d9003e38afbbbf4465f9ac0903e16",
+    "figS_load_scaling.pdf": "5575c30b7c9c5ad66086037113f5140ca51598812109cbc496801d6307887ce3",
+    "figS_load_scaling.png": "61564e5f296f6245906f51e22a696d2a017f61a50a35454176c21121ed37c69e",
+    "figS_load_scaling.svg": "1c3e2b7bfd80c8d933cfbb3d27fb2860334a97d7e1830aef2a5cb099dee20ba3",
+    "figS_load_scaling_source.csv": "4194466d69a2e7c01ee74bcd36f799b4e6d5f63837e462edefbaffa1b5d38aea"
+  }
+}

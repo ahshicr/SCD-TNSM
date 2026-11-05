@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite this software and evidence release when reusing its implementation or measurements."
+type: software
+title: "SCD: Switch-Coupled Scheduling for Energy-Bounded Heterogeneous Edge AI on Commodity Ethernet"
+authors:
+  - family-names: Li
+    given-names: Wuzhao
+  - family-names: Guo
+    given-names: Weian
+version: 2.0.0
+date-released: 2026-11-05
+repository-code: "https://github.com/ahshicr/SCD-TNSM"
+url: "https://github.com/ahshicr/SCD-TNSM/releases/tag/v2.0.0"
+license: MIT
+keywords:
+  - edge computing
+  - scheduling
+  - Ethernet
+  - energy management
+  - reproducibility

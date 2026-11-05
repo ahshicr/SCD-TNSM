@@ -1,0 +1,21 @@
+\begin{tabular}{llrrrr}
+\toprule
+Board & Deployment & Ready (ms) & First result (ms) & Resident (ms) & Compute (ms) \\
+\midrule
+Pi 5 & Host process & 91.34 $\pm$ 2.15 & 99.05 $\pm$ 2.52 & 5.55 $\pm$ 0.24 & 4.94 $\pm$ 0.24 \\
+Pi 5 & Cached container & 2157.14 $\pm$ 986.87 & 2163.54 $\pm$ 986.86 & 5.80 $\pm$ 0.04 & 4.93 $\pm$ 0.01 \\
+Pi 5 & Paired difference & 2065.80 $\pm$ 987.66 & 2064.49 $\pm$ 987.74 & 0.24 $\pm$ 0.23 & $-0.00\pm0.24$ \\
+\addlinespace
+Pi 4 & Host process & 228.83 $\pm$ 6.20 & 241.59 $\pm$ 6.19 & 12.67 $\pm$ 0.15 & 11.17 $\pm$ 0.13 \\
+Pi 4 & Cached container & 4341.22 $\pm$ 1555.51 & 4355.09 $\pm$ 1555.52 & 16.93 $\pm$ 7.48 & 11.32 $\pm$ 0.19 \\
+Pi 4 & Paired difference & 4112.39 $\pm$ 1555.16 & 4113.49 $\pm$ 1555.18 & 4.26 $\pm$ 7.48 & 0.16 $\pm$ 0.18 \\
+\addlinespace
+Pi 3 & Host process & 412.16 $\pm$ 4.86 & 447.47 $\pm$ 4.85 & 34.69 $\pm$ 0.06 & 32.13 $\pm$ 0.06 \\
+Pi 3 & Cached container & 43303.91 $\pm$ 1626.27 & 43344.59 $\pm$ 1626.34 & 37.09 $\pm$ 0.10 & 33.70 $\pm$ 0.10 \\
+Pi 3 & Paired difference & 42891.75 $\pm$ 1627.90 & 42897.12 $\pm$ 1627.95 & 2.41 $\pm$ 0.13 & 1.57 $\pm$ 0.12 \\
+\addlinespace
+Pi 2 & Host process & 843.33 $\pm$ 4.91 & 919.47 $\pm$ 4.91 & 74.26 $\pm$ 0.21 & 69.85 $\pm$ 0.21 \\
+Pi 2 & Cached container & 19317.33 $\pm$ 353.00 & 19399.82 $\pm$ 353.13 & 81.04 $\pm$ 0.26 & 75.34 $\pm$ 0.25 \\
+Pi 2 & Paired difference & 18474.00 $\pm$ 349.99 & 18480.35 $\pm$ 350.07 & 6.78 $\pm$ 0.31 & 5.49 $\pm$ 0.31 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,20 @@
+Condition & Policy & On-time (\%) & Rejection (\%) & Mean (ms) & P95 (ms)\\
+\midrule
+MLP nominal & Compute-first & $52.22\pm1.72$ & $47.78\pm1.72$ & $77.13\pm2.30$ & $111.85\pm3.00$\\
+MLP nominal & Matched DPP & $52.22\pm1.72$ & $47.78\pm1.72$ & $85.66\pm3.69$ & $148.51\pm9.32$\\
+MLP nominal & SCD & $52.22\pm1.72$ & $47.78\pm1.72$ & $86.18\pm3.83$ & $148.65\pm9.79$\\
+\midrule
+MLP energy pressure & Compute-first & $41.23\pm2.03$ & $58.17\pm2.03$ & $133.51\pm4.41$ & $370.78\pm42.30$\\
+MLP energy pressure & Matched DPP & $41.88\pm2.14$ & $57.44\pm2.15$ & $130.42\pm3.03$ & $293.95\pm8.83$\\
+MLP energy pressure & SCD & $41.93\pm2.10$ & $57.46\pm2.15$ & $133.32\pm9.10$ & $322.00\pm84.73$\\
+\midrule
+MLP network pressure & Compute-first & $22.59\pm5.18$ & $60.25\pm2.29$ & $1042.28\pm225.16$ & $3249.27\pm158.13$\\
+MLP network pressure & Matched DPP & $22.97\pm4.37$ & $60.18\pm1.98$ & $1017.56\pm178.13$ & $3165.69\pm198.56$\\
+MLP network pressure & SCD & $22.76\pm4.73$ & $60.30\pm2.09$ & $1041.52\pm182.95$ & $3250.96\pm121.96$\\
+MLP network pressure & No network penalty & $22.81\pm4.59$ & $60.13\pm2.12$ & $1030.79\pm173.24$ & $3202.30\pm126.41$\\
+MLP network pressure & Independent link state & $22.55\pm4.60$ & $60.13\pm1.93$ & $1035.25\pm177.68$ & $3198.54\pm110.52$\\
+\midrule
+Mixed nominal & Compute-first & $52.22\pm1.72$ & $47.78\pm1.72$ & $40.01\pm0.88$ & $99.68\pm1.44$\\
+Mixed nominal & Matched DPP & $52.22\pm1.72$ & $47.78\pm1.72$ & $40.32\pm1.31$ & $99.04\pm1.80$\\
+Mixed nominal & SCD & $52.22\pm1.72$ & $47.78\pm1.72$ & $40.32\pm1.49$ & $99.10\pm2.20$\\
+\bottomrule

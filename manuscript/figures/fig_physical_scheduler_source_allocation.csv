@@ -1,0 +1,121 @@
+method,block,display_family,share_percent
+compute_only,0,Pi 5,98.69703389830507
+compute_only,1,Pi 5,98.76623611563367
+compute_only,2,Pi 5,98.72328318930259
+compute_only,3,Pi 5,98.14956610515569
+compute_only,4,Pi 5,98.60114660114657
+compute_only,5,Pi 5,98.68971089331505
+compute_only,6,Pi 5,98.82611080636312
+compute_only,7,Pi 5,98.78403658283102
+compute_only,8,Pi 5,98.97061977267852
+compute_only,9,Pi 5,98.79246134747768
+compute_only,0,Pi 4,1.3029661016948977
+compute_only,1,Pi 4,1.2337638843662802
+compute_only,2,Pi 4,1.2767168106973759
+compute_only,3,Pi 4,1.85043389484429
+compute_only,4,Pi 4,1.39885339885339
+compute_only,5,Pi 4,1.31028910668491
+compute_only,6,Pi 4,1.1738891936368399
+compute_only,7,Pi 4,1.21596341716897
+compute_only,8,Pi 4,1.02938022732144
+compute_only,9,Pi 4,1.2075386525222727
+compute_only,0,Other,0.0
+compute_only,1,Other,0.0
+compute_only,2,Other,0.0
+compute_only,3,Other,0.0
+compute_only,4,Other,0.0
+compute_only,5,Other,0.0
+compute_only,6,Other,0.0
+compute_only,7,Other,0.0
+compute_only,8,Other,0.0
+compute_only,9,Other,0.0
+energy_greedy,0,Pi 5,99.88700564971751
+energy_greedy,1,Pi 5,93.4512826079091
+energy_greedy,2,Pi 5,71.73797076709695
+energy_greedy,3,Pi 5,63.98034711587543
+energy_greedy,4,Pi 5,73.20884520884519
+energy_greedy,5,Pi 5,89.25422418941228
+energy_greedy,6,Pi 5,72.3898336076065
+energy_greedy,7,Pi 5,96.6812166562738
+energy_greedy,8,Pi 5,98.7382943741511
+energy_greedy,9,Pi 5,88.15032163412705
+energy_greedy,0,Pi 4,0.11299435028248
+energy_greedy,1,Pi 4,6.548717392090869
+energy_greedy,2,Pi 4,24.542124542124522
+energy_greedy,3,Pi 4,30.471541602858572
+energy_greedy,4,Pi 4,23.305487305487283
+energy_greedy,5,Pi 4,10.408543225489138
+energy_greedy,6,Pi 4,25.72316694093982
+energy_greedy,7,Pi 4,3.31878334372617
+energy_greedy,8,Pi 4,1.26170562584886
+energy_greedy,9,Pi 4,11.590113982620451
+energy_greedy,0,Other,0.0
+energy_greedy,1,Other,0.0
+energy_greedy,2,Other,3.71990469077846
+energy_greedy,3,Other,5.54811128126593
+energy_greedy,4,Other,3.48566748566745
+energy_greedy,5,Other,0.33723258509851994
+energy_greedy,6,Other,1.88699945145364
+energy_greedy,7,Other,0.0
+energy_greedy,8,Other,0.0
+energy_greedy,9,Other,0.25956438325244
+dpp_matched,0,Pi 5,99.98854130858254
+dpp_matched,1,Pi 5,99.70554926387315
+dpp_matched,2,Pi 5,99.97756590016823
+dpp_matched,3,Pi 5,99.74940198200251
+dpp_matched,4,Pi 5,99.97725980670835
+dpp_matched,5,Pi 5,99.94475138121547
+dpp_matched,6,Pi 5,99.97772580465531
+dpp_matched,7,Pi 5,99.97781475318911
+dpp_matched,8,Pi 5,99.98880304557159
+dpp_matched,9,Pi 5,99.99999999999999
+dpp_matched,0,Pi 4,0.011458691417440001
+dpp_matched,1,Pi 4,0.29445073612683004
+dpp_matched,2,Pi 4,0.02243409983174
+dpp_matched,3,Pi 4,0.25059801799748
+dpp_matched,4,Pi 4,0.02274019329164
+dpp_matched,5,Pi 4,0.05524861878453
+dpp_matched,6,Pi 4,0.02227419534469
+dpp_matched,7,Pi 4,0.02218524681087
+dpp_matched,8,Pi 4,0.011196954428389999
+dpp_matched,9,Pi 4,0.0
+dpp_matched,0,Other,0.0
+dpp_matched,1,Other,0.0
+dpp_matched,2,Other,0.0
+dpp_matched,3,Other,0.0
+dpp_matched,4,Other,0.0
+dpp_matched,5,Other,0.0
+dpp_matched,6,Other,0.0
+dpp_matched,7,Other,0.0
+dpp_matched,8,Other,0.0
+dpp_matched,9,Other,0.0
+scd,0,Pi 5,99.97708261716511
+scd,1,Pi 5,99.78482446206115
+scd,2,Pi 5,99.98878295008411
+scd,3,Pi 5,99.68105706800317
+scd,4,Pi 5,99.97725980670835
+scd,5,Pi 5,99.94475138121544
+scd,6,Pi 5,99.97772580465528
+scd,7,Pi 5,99.96672212978368
+scd,8,Pi 5,99.99999999999999
+scd,9,Pi 5,99.99999999999999
+scd,0,Pi 4,0.022917382834880002
+scd,1,Pi 4,0.21517553793884
+scd,2,Pi 4,0.01121704991587
+scd,3,Pi 4,0.31894293199679996
+scd,4,Pi 4,0.02274019329164
+scd,5,Pi 4,0.05524861878453
+scd,6,Pi 4,0.02227419534469
+scd,7,Pi 4,0.0332778702163
+scd,8,Pi 4,0.0
+scd,9,Pi 4,0.0
+scd,0,Other,0.0
+scd,1,Other,0.0
+scd,2,Other,0.0
+scd,3,Other,0.0
+scd,4,Other,0.0
+scd,5,Other,0.0
+scd,6,Other,0.0
+scd,7,Other,0.0
+scd,8,Other,0.0
+scd,9,Other,0.0

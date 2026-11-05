@@ -1,0 +1,11 @@
+numpy==2.4.2
+pandas==3.0.0
+scipy==1.17.0
+matplotlib==3.10.8
+numba==0.67.0
+torch==2.11.0
+paramiko==5.0.0
+pytest==9.1.1
+PyMuPDF==1.28.0
+scikit-learn==1.8.0
+Pillow==12.1.1
