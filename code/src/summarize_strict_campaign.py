@@ -2,8 +2,10 @@ from __future__ import annotations
 
 """Audit and summarize the formula-faithful strict campaign.
 
-Every inferential row is paired by trace seed.  Holm adjustment is applied to
-all finite p values within the registered experiment family.  The script never
+Every inferential row is paired by trace seed. Holm adjustment retains all
+registered stochastic contrasts, including zero or undefined differences with
+conservative p=1. Single-reconstruction controls have no inferential p value.
+The script never
 silently drops a failed conservation or provenance check.
 """
 
@@ -92,7 +94,6 @@ def paired_row(
     pair = left[["seed", metric]].merge(
         right[["seed", metric]], on="seed", suffixes=("_reference", "_challenger")
     )
-    pair = pair.dropna()
     if pair.empty:
         return None
     difference = (
@@ -100,11 +101,18 @@ def paired_row(
         - pair[f"{metric}_reference"].to_numpy(dtype=np.float64)
     )
     n, mean, lower, upper = mean_ci(difference)
-    p_value = (
-        float(stats.ttest_1samp(difference, 0.0).pvalue)
-        if n >= 2 and not np.allclose(difference, difference[0])
-        else (0.0 if n >= 2 and difference[0] != 0 else math.nan)
-    )
+    # Do not make the size of the multiplicity family depend on observed zeros
+    # or no-service outcomes. Keep the declared stochastic comparison as p=1
+    # when its outcome is undefined. A fixed one-reconstruction control remains
+    # descriptive only. Near-constant differences still use the actual t test.
+    if len(pair) < 2:
+        p_value = math.nan
+    elif not np.isfinite(difference).all() or np.all(difference == 0):
+        p_value = 1.0
+    elif np.std(difference, ddof=1) == 0:
+        p_value = 0.0
+    else:
+        p_value = float(stats.ttest_1samp(difference, 0.0).pvalue)
     return {
         "family": family,
         "contrast": contrast,
@@ -388,7 +396,9 @@ def main() -> int:
     summary.to_csv(args.out / "descriptive_summary.csv", index=False)
     paired.to_csv(args.out / "paired_contrasts.csv", index=False)
     report = {
-        "schema": "tnsm.strict-statistical-summary.v1",
+        "schema": "tnsm.strict-statistical-summary.v2",
+        "analysis_source_sha256": sha256(Path(__file__)),
+        "multiplicity_policy": "All registered stochastic contrasts remain. All-zero or undefined differences contribute p=1. Single-reconstruction controls are descriptive only.",
         **audit_report,
         "metrics": list(METRICS),
         "summary_rows": int(len(summary)),

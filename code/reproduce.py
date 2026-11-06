@@ -21,12 +21,15 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def package_sources(destination: Path, base: Path, overlay: Path | None=None) -> Path:
+def package_sources(destination: Path, base: Path, overlay: Path | None=None,
+                    correct_statistics: bool=False) -> Path:
     """Make importable snapshots, retaining exact source bytes and local hashes."""
     destination.mkdir(parents=True,exist_ok=True)
     sources={p.name:p for p in base.glob('*.py')}
     if overlay:
         sources.update({p.name:p for p in overlay.glob('*.py')})
+    if correct_statistics:
+        sources['summarize_strict_campaign.py'] = CODE/'src/summarize_strict_campaign.py'
     if '__init__.py' not in sources:
         raise ValueError('Execution source package is incomplete')
     target=destination/'src'
@@ -99,7 +102,8 @@ def main() -> None:
              '--archive',str(CODE/'data/azurefunctions_dataset2019.tar.xz'),'--out',str(root/'upstream_processed/workload_strict_v2.npz')])
     if args.mode in ['baseline','all']:
         traces=prepare_traces(root,args.workers)
-        sources=package_sources(root/'execution_r1',CODE/'frozen_r1_src')
+        # Only the unregistered summarizer changes, with its own source manifest.
+        sources=package_sources(root/'execution_statistics',CODE/'frozen_r1_src',correct_statistics=True)
         run([str(CODE/'run_revision.py'),'--workers',str(args.workers),
              '--trace-root',str(traces),'--skip-traces',
              '--fresh-output-root',str(root/'baseline'),'--skip-tests'],sources)
@@ -111,7 +115,8 @@ def main() -> None:
         run(['-m','src.analyze_r2_simulations','--directory',str(root/'additions'),
              '--out',str(root/'statistics/additions'),'--tex',str(root/'tables')])
     if args.mode in ['statistics','all']:
-        sources=package_sources(root/'execution_r1',CODE/'frozen_r1_src')
+        package_sources(root/'execution_r1',CODE/'frozen_r1_src')
+        sources=package_sources(root/'execution_statistics',CODE/'frozen_r1_src',correct_statistics=True)
         campaigns=['campaign_formula_v7_20260914','network_stress_formula_v4_20260914',
                    'load_scaling_formula_v2_20260914','deadline_guard_network_stress_v4_20260914',
                    'breakdown_formula_v1_20260914','measured_startup_strict_v1_20260914']

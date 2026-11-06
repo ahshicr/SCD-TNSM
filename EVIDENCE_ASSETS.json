@@ -1,6 +1,6 @@
 {
-  "version": "2.0.0",
-  "extraction": "Extract all evidence archives into the repository root. Each has distinct member paths.",
+  "version": "2.0.1",
+  "extraction": "Extract all eight listed evidence ZIPs in order. The final correction intentionally replaces the listed derived analysis files. Original measurements are unchanged.",
   "assets": [
     {
       "name": "scd-v2.0.0-evidence-01.zip",
@@ -827,7 +827,9 @@
         "code/results/r2/commissioning/matched_physical_v3/trial_005/protocol.json",
         "code/results/r2/commissioning/matched_physical_v3/trial_005/summary.json",
         "code/results/r2/commissioning/matched_physical_v3/trial_005/worker_ready.json"
-      ]
+      ],
+      "release_tag": "v2.0.0",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.0/scd-v2.0.0-evidence-01.zip"
     },
     {
       "name": "scd-v2.0.0-evidence-02.zip",
@@ -1568,7 +1570,9 @@
         "code/results/r2/matched_physical_v4/trial_063/protocol.json",
         "code/results/r2/matched_physical_v4/trial_063/summary.json",
         "code/results/r2/matched_physical_v4/trial_063/worker_ready.json"
-      ]
+      ],
+      "release_tag": "v2.0.0",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.0/scd-v2.0.0-evidence-02.zip"
     },
     {
       "name": "scd-v2.0.0-evidence-03.zip",
@@ -2514,7 +2518,9 @@
         "code/results/revision/forecast_prequential_20260905/checkpoint_before_02880.pt",
         "code/results/revision/forecast_prequential_20260905/checkpoint_before_04320.pt",
         "code/results/revision/forecast_prequential_20260905/checkpoint_before_05760.pt"
-      ]
+      ],
+      "release_tag": "v2.0.0",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.0/scd-v2.0.0-evidence-03.zip"
     },
     {
       "name": "scd-v2.0.0-evidence-04.zip",
@@ -3947,7 +3953,9 @@
         "code/results/revision/physical/physical_scheduler_full_v3_complete_20260906/trial_122/protocol.json",
         "code/results/revision/physical/physical_scheduler_full_v3_complete_20260906/trial_122/summary.json",
         "code/results/revision/physical/physical_scheduler_full_v3_complete_20260906/trial_122/worker_ready.json"
-      ]
+      ],
+      "release_tag": "v2.0.0",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.0/scd-v2.0.0-evidence-04.zip"
     },
     {
       "name": "scd-v2.0.0-evidence-05.zip",
@@ -4886,7 +4894,9 @@
         "code/results/revision/physical/physical_scheduler_full_v3_complete_20260906/trial_255/protocol.json",
         "code/results/revision/physical/physical_scheduler_full_v3_complete_20260906/trial_255/summary.json",
         "code/results/revision/physical/physical_scheduler_full_v3_complete_20260906/trial_255/worker_ready.json"
-      ]
+      ],
+      "release_tag": "v2.0.0",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.0/scd-v2.0.0-evidence-05.zip"
     },
     {
       "name": "scd-v2.0.0-evidence-06.zip",
@@ -5292,7 +5302,9 @@
         "code/results/strict/campaign_formula_v7_20260914/outcomes/8e022b334b155fbb99ff756d.npz",
         "code/results/strict/campaign_formula_v7_20260914/outcomes/8ee7fb480c9d406276fa3f91.npz",
         "code/results/strict/campaign_formula_v7_20260914/outcomes/d24da6903e38f3ee8951f16f.npz"
-      ]
+      ],
+      "release_tag": "v2.0.0",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.0/scd-v2.0.0-evidence-06.zip"
     },
     {
       "name": "scd-v2.0.0-evidence-07.zip",
@@ -6425,7 +6437,32 @@
         "code/results/strict/traces_v3/load_scaling_registry.json",
         "code/results/strict/traces_v3/primary_trace_registry.json",
         "code/results/strict/unit_tests_final_20260915.xml"
-      ]
+      ],
+      "release_tag": "v2.0.0",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.0/scd-v2.0.0-evidence-07.zip"
+    },
+    {
+      "name": "scd-v2.0.1-statistical-correction.zip",
+      "sha256": "62e9885418242c8bd6f8ea49f6b71db29e4a9bb2096cad3aaa57df3795b0bae6",
+      "bytes": 218932,
+      "files": 13,
+      "members": [
+        "code/results/r2/statistical_correction_v201.json",
+        "code/results/strict/breakdown_formula_v1_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/breakdown_formula_v1_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/campaign_formula_v7_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/campaign_formula_v7_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/load_scaling_formula_v2_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/load_scaling_formula_v2_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/measured_startup_strict_v1_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/measured_startup_strict_v1_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/network_stress_formula_v4_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/network_stress_formula_v4_20260914/analysis/paired_contrasts.csv"
+      ],
+      "release_tag": "v2.0.1",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.1/scd-v2.0.1-statistical-correction.zip"
     }
   ]
 }

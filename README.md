@@ -9,13 +9,23 @@ component, allocation, common-constraint hardware, and actual-switch studies.
 
 ## Get the complete evidence
 
-Tagged release: [v2.0.0](https://github.com/ahshicr/SCD-TNSM/releases/tag/v2.0.0).
+Tagged release: [v2.0.1](https://github.com/ahshicr/SCD-TNSM/releases/tag/v2.0.1).
 
 The source repository and the evidence archives are complementary. Download
-the assets listed in `EVIDENCE_ASSETS.json` from the tagged release, verify
-their SHA-256 digests, and extract every evidence ZIP into the repository
-root. Each archive has distinct paths. Ordinary ZIP extraction is sufficient.
+the assets listed in `EVIDENCE_ASSETS.json` using each entry's `download_url`,
+verify their SHA-256 digests, and extract them into the repository root **in
+the listed order**. First extract the seven immutable v2.0.0 evidence archives.
+Then extract the v2.0.1 statistical correction ZIP, allowing it to replace
+the listed derived statistical files. The final overlay is required. Original
+trial logs and simulation records are unchanged. Ordinary ZIP extraction is sufficient.
 The source archive is also supplied for users who do not use Git.
+
+Version 2.0.1 corrects the multiplicity family in the retained simulation
+analysis. Zero or undefined stochastic contrasts now contribute conservative
+`p=1` instead of being omitted. Single-reconstruction controls remain
+descriptive. See [the correction record](CORRECTION-v2.0.1.md) for the exact
+scope and changes in significance. Means, intervals, figures and source
+measurements remain unchanged.
 
 `MANIFEST.sha256` identifies the distributed files. `PUBLIC_PROVENANCE.json`
 records acquisition-origin and public-file hashes, including deployment

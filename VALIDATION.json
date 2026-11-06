@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "utc": "2026-11-05T23:08:26.501829+00:00",
+  "utc": "2026-11-06T01:50:53.585505+00:00",
   "original_simulations": 1128,
   "added_simulations": 200,
   "upstream_archive": {
@@ -260,7 +260,7 @@
   "new_scheduler_trials": 140,
   "new_switch_trials": 60,
   "tests": {
-    "tests": 165,
+    "tests": 169,
     "failures": 0,
     "errors": 0,
     "skipped": 0
@@ -285,8 +285,8 @@
     {
       "reference": "code/results/strict/campaign_formula_v7_20260914/analysis/paired_contrasts.csv",
       "output": "reproduction/statistics/campaign_formula_v7_20260914/paired_contrasts.csv",
-      "reference_sha256": "fdc8be38ddca1f4b6ec6728a102c884dce42c45d28cf6cb7804138f5fed0bbff",
-      "output_sha256": "fdc8be38ddca1f4b6ec6728a102c884dce42c45d28cf6cb7804138f5fed0bbff",
+      "reference_sha256": "f251e72d2c93f4a594e02f199ca01458e49bbb80d1fe55f925364b904c2bdca8",
+      "output_sha256": "f251e72d2c93f4a594e02f199ca01458e49bbb80d1fe55f925364b904c2bdca8",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
       "passed": true
     },
@@ -333,8 +333,8 @@
     {
       "reference": "code/results/strict/load_scaling_formula_v2_20260914/analysis/paired_contrasts.csv",
       "output": "reproduction/statistics/load_scaling_formula_v2_20260914/paired_contrasts.csv",
-      "reference_sha256": "2847616df62455f1f8345c564bd199000db9b1d01f35acd06bb7157e7ef5c40f",
-      "output_sha256": "2847616df62455f1f8345c564bd199000db9b1d01f35acd06bb7157e7ef5c40f",
+      "reference_sha256": "861fa6c2d6a16263d0b879bc771cff34887bf6cf4672ac7dd3396221cdb7097c",
+      "output_sha256": "861fa6c2d6a16263d0b879bc771cff34887bf6cf4672ac7dd3396221cdb7097c",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
       "passed": true
     },
@@ -357,8 +357,8 @@
     {
       "reference": "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/paired_contrasts.csv",
       "output": "reproduction/statistics/deadline_guard_network_stress_v4_20260914/paired_contrasts.csv",
-      "reference_sha256": "bfbf9b2fd190e51a0a5d0a494a4876941606db0baeb0164f07a7b800ead06f3f",
-      "output_sha256": "bfbf9b2fd190e51a0a5d0a494a4876941606db0baeb0164f07a7b800ead06f3f",
+      "reference_sha256": "82e1abdf7c519aa2ed9547b81c0b00fce2b9b39174a5dffa40a951f94d9d6553",
+      "output_sha256": "82e1abdf7c519aa2ed9547b81c0b00fce2b9b39174a5dffa40a951f94d9d6553",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
       "passed": true
     },
@@ -381,8 +381,8 @@
     {
       "reference": "code/results/strict/breakdown_formula_v1_20260914/analysis/paired_contrasts.csv",
       "output": "reproduction/statistics/breakdown_formula_v1_20260914/paired_contrasts.csv",
-      "reference_sha256": "64d52bca1fc2064e755c35492c0a6dd0ddd43953c8690020e0854b7ac4d5de3a",
-      "output_sha256": "64d52bca1fc2064e755c35492c0a6dd0ddd43953c8690020e0854b7ac4d5de3a",
+      "reference_sha256": "55f738bc70562420d709710e369bd6b87a8c774001395cdb7d5b2e1934de02fd",
+      "output_sha256": "55f738bc70562420d709710e369bd6b87a8c774001395cdb7d5b2e1934de02fd",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
       "passed": true
     },
@@ -405,8 +405,8 @@
     {
       "reference": "code/results/strict/measured_startup_strict_v1_20260914/analysis/paired_contrasts.csv",
       "output": "reproduction/statistics/measured_startup_strict_v1_20260914/paired_contrasts.csv",
-      "reference_sha256": "6d020882196c53e482da63edd6ff67e0af6a968c62bafe5349ca901f0e3182df",
-      "output_sha256": "6d020882196c53e482da63edd6ff67e0af6a968c62bafe5349ca901f0e3182df",
+      "reference_sha256": "ee210301d039252de99959d03396d459e036c90710a7c8b369aa161886bd0990",
+      "output_sha256": "ee210301d039252de99959d03396d459e036c90710a7c8b369aa161886bd0990",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
       "passed": true
     },
@@ -932,7 +932,7 @@
       {
         "file": "fig1_architecture.pdf",
         "reference_sha256": "37fc3e97938b8af8d82b0d716b5d5264c20bb14939af944e2248f3c89b207762",
-        "recomputed_sha256": "5a4018e2768dac5396632d2a349f3eabf6b44e86f8b7159ff3a4b4658c6a8972",
+        "recomputed_sha256": "3b5effed9b700ccd95ebe97f78b7de6837009a7a39ced1b99efb60762c7604e9",
         "pages": [
           {
             "page": 1,
@@ -946,7 +946,7 @@
       {
         "file": "fig2_primary.pdf",
         "reference_sha256": "a9af48a4bb7fd668f81112602aa19bca5c0dff91495b24ae431e762779c0ee92",
-        "recomputed_sha256": "9de69f8e79c6a44addcb8e655e5a73294579dfb793b4a5209e1c60f6391ab2c8",
+        "recomputed_sha256": "f1998675358e62c2df9f85aa5171d9c619ece7072a97cc16b4c984149039d4b0",
         "pages": [
           {
             "page": 1,
@@ -960,7 +960,7 @@
       {
         "file": "fig3_sampling_cache.pdf",
         "reference_sha256": "b378786049003a6097dbfe11779d7b7aada89a30d2e9a87309ce4a250444c61b",
-        "recomputed_sha256": "c953220cbc16505e2dbfb2f3b4d489f26e5966554f6462357489c168699acd60",
+        "recomputed_sha256": "b0623aba19944cb00a4a8abfc57e5b3310b73c43fcedc97f3165e6545fc7e735",
         "pages": [
           {
             "page": 1,
@@ -974,7 +974,7 @@
       {
         "file": "fig4_effects_stress.pdf",
         "reference_sha256": "84fa9c4419bdf683ef6cc6c038c53c622f02124664fcc6336d3697e784deb24a",
-        "recomputed_sha256": "49d6f652f2e685b4810e7f70378745fe7a66334304c2abc497cbcd758df96057",
+        "recomputed_sha256": "a95ee94cc4c5cd7578682e25a9fdfd7d2ec3851a3024c78341824b06f6b0f312",
         "pages": [
           {
             "page": 1,
@@ -988,7 +988,7 @@
       {
         "file": "figS_breakdown.pdf",
         "reference_sha256": "fc2d8537a6272a1de396f79fc563fda196eee7381834422da6bcb6c4c90c25bd",
-        "recomputed_sha256": "5bfd1a1aac9a08e6cd7594eebe28e6708e075cf5a8b06d90c2f2ddee331c7d6a",
+        "recomputed_sha256": "a73feff32df0e66087f9f1a2e5edab0acd6c4f98323a0e8943e9d5985d7fa150",
         "pages": [
           {
             "page": 1,
@@ -1002,7 +1002,7 @@
       {
         "file": "figS_load_scaling.pdf",
         "reference_sha256": "5575c30b7c9c5ad66086037113f5140ca51598812109cbc496801d6307887ce3",
-        "recomputed_sha256": "4536345d4568fdad95fc7e4609b33fd3755f6ca59e61342ace1278d1a5913838",
+        "recomputed_sha256": "21f927969509a9d1d718a0bb0c99825e55e4c9f694c6df1b636e42ff8b9ef743",
         "pages": [
           {
             "page": 1,
@@ -1016,7 +1016,7 @@
       {
         "file": "fig_container_startup.pdf",
         "reference_sha256": "5e85b384f3cd2daeb8145ac3a909d3a38ec6e012ade55905dd08317a26adbbdd",
-        "recomputed_sha256": "44957d0e3539b6ce44304031b4a7357a71ca510918379d5505bae5c8c5ebf072",
+        "recomputed_sha256": "29cfe30cf21b5402afa320a5e7efa9922f012a8c9df770785431e05c53f79c17",
         "pages": [
           {
             "page": 1,
@@ -1030,7 +1030,7 @@
       {
         "file": "fig_physical_scheduler.pdf",
         "reference_sha256": "0cba611c7f1e0bda26ce7ade5cb4d9f558a88336e2da08315690e3f53fe3dd06",
-        "recomputed_sha256": "61cacda701e844312a5a9fc0304e2741ace21b3aa6de0ab896bfe283760ae3ab",
+        "recomputed_sha256": "76b784b46c460ca7cc80162f1b309382a23281b88665339ef653d86adc5ed2eb",
         "pages": [
           {
             "page": 1,
@@ -1044,7 +1044,7 @@
       {
         "file": "physical_calibration.pdf",
         "reference_sha256": "badaabbe0b73909c11f3b005ce728683fb7245b73270ad6251b7053d429a1301",
-        "recomputed_sha256": "c6ec338b34b245f5ec8ec54deb770a695799604f05fd244bbaf981b318ada4d3",
+        "recomputed_sha256": "110346821175f2e38e5d2783a660d753ac06e4bf64b282edc1a0807130c4e39c",
         "pages": [
           {
             "page": 1,
@@ -8605,19 +8605,19 @@
       "checks": 49,
       "passed": 49,
       "failed": 0,
-      "report_sha256": "5fc8f65698cd85d725d707977298b21c5544873ac2bc887fe20fb2824b638b1b"
+      "report_sha256": "d9ed803752c6b3289544c7e11f1666c444172523bb160b69b2930850651053af"
     },
     "r2": {
       "status": "PASS",
       "checks": 44,
       "passed": 44,
       "failed": 0,
-      "report_sha256": "b4feb794825ed078d1c611d19fc957fc398eafa80ecc8c85e91997f269192545"
+      "report_sha256": "1177b6bdf47e805db13d422db337ee9ee1809d5289cbc9c16a1ac9b598d8670a"
     }
   },
   "full_training_verification": {
     "complete": true,
-    "utc": "2026-11-05T23:08:26.469704+00:00",
+    "utc": "2026-11-06T01:50:53.559779+00:00",
     "source_sha256": {
       "__init__.py": "681b65a3defe0b1bad17fdc6539937422fb6376f266e9e79de62260af834a5ed",
       "train_r2_workloads.py": "6631d02c4f28467eb62261f8dc76bca6e9b4a708db94691e51af098720925a7e",
