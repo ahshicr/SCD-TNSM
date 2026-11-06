@@ -1,5 +1,5 @@
 {
-  "version": "2.0.1",
+  "version": "2.0.2",
   "extraction": "Extract all eight listed evidence ZIPs in order. The final correction intentionally replaces the listed derived analysis files. Original measurements are unchanged.",
   "assets": [
     {
@@ -6442,27 +6442,42 @@
       "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.0/scd-v2.0.0-evidence-07.zip"
     },
     {
-      "name": "scd-v2.0.1-statistical-correction.zip",
-      "sha256": "62e9885418242c8bd6f8ea49f6b71db29e4a9bb2096cad3aaa57df3795b0bae6",
-      "bytes": 218932,
-      "files": 13,
+      "name": "scd-v2.0.2-statistical-correction.zip",
+      "sha256": "8ca5ade289a656a5075973fa28a6c2ab4de1f1d4af1c79a7bb40762463266832",
+      "bytes": 959336,
+      "files": 28,
       "members": [
+        "code/results/r2/conditional_denominator_correction_v202.json",
+        "code/results/r2/simulation_factorial_20261105/analysis/audit.json",
+        "code/results/r2/simulation_factorial_20261105/analysis/reported_runs.csv",
         "code/results/r2/statistical_correction_v201.json",
         "code/results/strict/breakdown_formula_v1_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/breakdown_formula_v1_20260914/analysis/descriptive_summary.csv",
         "code/results/strict/breakdown_formula_v1_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/breakdown_formula_v1_20260914/analysis/reported_runs.csv",
         "code/results/strict/campaign_formula_v7_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/campaign_formula_v7_20260914/analysis/descriptive_summary.csv",
         "code/results/strict/campaign_formula_v7_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/campaign_formula_v7_20260914/analysis/reported_runs.csv",
         "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/descriptive_summary.csv",
         "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/reported_runs.csv",
         "code/results/strict/load_scaling_formula_v2_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/load_scaling_formula_v2_20260914/analysis/descriptive_summary.csv",
         "code/results/strict/load_scaling_formula_v2_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/load_scaling_formula_v2_20260914/analysis/reported_runs.csv",
         "code/results/strict/measured_startup_strict_v1_20260914/analysis/audit_and_summary.json",
+        "code/results/strict/measured_startup_strict_v1_20260914/analysis/descriptive_summary.csv",
         "code/results/strict/measured_startup_strict_v1_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/measured_startup_strict_v1_20260914/analysis/reported_runs.csv",
         "code/results/strict/network_stress_formula_v4_20260914/analysis/audit_and_summary.json",
-        "code/results/strict/network_stress_formula_v4_20260914/analysis/paired_contrasts.csv"
+        "code/results/strict/network_stress_formula_v4_20260914/analysis/descriptive_summary.csv",
+        "code/results/strict/network_stress_formula_v4_20260914/analysis/paired_contrasts.csv",
+        "code/results/strict/network_stress_formula_v4_20260914/analysis/reported_runs.csv"
       ],
-      "release_tag": "v2.0.1",
-      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.1/scd-v2.0.1-statistical-correction.zip"
+      "release_tag": "v2.0.2",
+      "download_url": "https://github.com/ahshicr/SCD-TNSM/releases/download/v2.0.2/scd-v2.0.2-statistical-correction.zip"
     }
   ]
 }

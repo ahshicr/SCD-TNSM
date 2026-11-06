@@ -45,6 +45,31 @@ METRICS = (
     "p95_network_queue_ms",
 )
 
+# These are conditional on admission. Immutable simulator records used a
+# max(admitted, 1) serialization guard, which is not a statistical denominator.
+ADMISSION_CONDITIONAL_METRICS = (
+    "miss_ratio", "deadline_ceiling_miss_ratio", "actual_cold_start_ratio",
+    "predicted_cold_start_ratio", "false_warm_ratio", "false_cold_ratio",
+    "thermal_derate_ratio", "energy_underestimation_ratio",
+)
+
+
+def normalize_conditional_metrics(frame: pd.DataFrame) -> pd.DataFrame:
+    """Return a reporting view without modifying the frozen acquisition records.
+
+    Zero-admission conditional ratios are undefined, not a miss probability of
+    one or a cold-start probability of zero. Offered-load success and the
+    explicitly declared no-service Jain sentinel retain their valid meanings.
+    """
+    result = frame.copy()
+    admitted = result["admitted_requests"].to_numpy(dtype=float)
+    if not np.isfinite(admitted).all() or np.any(admitted < 0) or np.any(admitted != np.floor(admitted)):
+        raise ValueError("Invalid admission denominator")
+    for metric in ADMISSION_CONDITIONAL_METRICS:
+        if metric in result:
+            result.loc[admitted == 0, metric] = np.nan
+    return result
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -56,6 +81,8 @@ def sha256(path: Path) -> str:
 
 def mean_ci(values: Iterable[float]) -> tuple[int, float, float, float]:
     array = np.asarray(list(values), dtype=np.float64)
+    if np.isinf(array).any() or (np.isfinite(array).any() and np.isnan(array).any()):
+        raise ValueError("Incomplete finite replicate set. Do not silently select complete cases.")
     array = array[np.isfinite(array)]
     n = len(array)
     if n == 0:
@@ -285,6 +312,7 @@ def audit(frame: pd.DataFrame, protocol: dict[str, object], directory: Path) -> 
 
 
 def summarize(frame: pd.DataFrame) -> pd.DataFrame:
+    frame = normalize_conditional_metrics(frame)
     rows: list[dict[str, object]] = []
     for (family, scenario, method), group in frame.groupby(
         ["family", "scenario", "method"], sort=True
@@ -307,6 +335,7 @@ def summarize(frame: pd.DataFrame) -> pd.DataFrame:
 
 
 def contrasts(frame: pd.DataFrame) -> pd.DataFrame:
+    frame = normalize_conditional_metrics(frame)
     rows: list[dict[str, object]] = []
     for (family, scenario), group in frame.groupby(["family", "scenario"], sort=True):
         reference = group[group.method == "scd"]
@@ -393,12 +422,15 @@ def main() -> int:
     paired = contrasts(frame)
     args.out.mkdir(parents=True, exist_ok=True)
     frame.sort_values("key").to_csv(args.out / "verified_runs.csv", index=False)
+    normalize_conditional_metrics(frame).sort_values("key").to_csv(args.out / "reported_runs.csv", index=False)
     summary.to_csv(args.out / "descriptive_summary.csv", index=False)
     paired.to_csv(args.out / "paired_contrasts.csv", index=False)
     report = {
-        "schema": "tnsm.strict-statistical-summary.v2",
+        "schema": "tnsm.strict-statistical-summary.v3",
         "analysis_source_sha256": sha256(Path(__file__)),
         "multiplicity_policy": "All registered stochastic contrasts remain. All-zero or undefined differences contribute p=1. Single-reconstruction controls are descriptive only.",
+        "conditional_ratio_policy": "reported_runs.csv marks all eight admission-conditional ratios NaN when admission is zero. verified_runs.csv preserves raw serialization. No partial-replicate estimate is reported.",
+        "zero_admission_runs": int((frame.admitted_requests == 0).sum()),
         **audit_report,
         "metrics": list(METRICS),
         "summary_rows": int(len(summary)),

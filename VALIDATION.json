@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "utc": "2026-11-06T01:50:53.585505+00:00",
+  "utc": "2026-11-06T04:02:30.849030+00:00",
   "original_simulations": 1128,
   "added_simulations": 200,
   "upstream_archive": {
@@ -260,7 +260,7 @@
   "new_scheduler_trials": 140,
   "new_switch_trials": 60,
   "tests": {
-    "tests": 169,
+    "tests": 176,
     "failures": 0,
     "errors": 0,
     "skipped": 0
@@ -275,24 +275,40 @@
       "passed": true
     },
     {
+      "reference": "code/results/strict/campaign_formula_v7_20260914/analysis/reported_runs.csv",
+      "output": "reproduction/statistics/campaign_formula_v7_20260914/reported_runs.csv",
+      "reference_sha256": "b7c770db49a439d236db2130cd0275d74a3eef1821c2e0a57c8b76b28874208a",
+      "output_sha256": "b7c770db49a439d236db2130cd0275d74a3eef1821c2e0a57c8b76b28874208a",
+      "comparison": "all rows, columns, labels and numerical values within 1e-12",
+      "passed": true
+    },
+    {
       "reference": "code/results/strict/campaign_formula_v7_20260914/analysis/descriptive_summary.csv",
       "output": "reproduction/statistics/campaign_formula_v7_20260914/descriptive_summary.csv",
-      "reference_sha256": "fd1e3b1b238bfe79eed5a509d3bc90e0becc3c35d7188b6735348f8a78ce93ce",
-      "output_sha256": "fd1e3b1b238bfe79eed5a509d3bc90e0becc3c35d7188b6735348f8a78ce93ce",
+      "reference_sha256": "9e21cd14e5f5e6477b49d6296bb83273ce6d53f6b8b8c3f9ab24f02131e0840b",
+      "output_sha256": "9e21cd14e5f5e6477b49d6296bb83273ce6d53f6b8b8c3f9ab24f02131e0840b",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
       "passed": true
     },
     {
       "reference": "code/results/strict/campaign_formula_v7_20260914/analysis/paired_contrasts.csv",
       "output": "reproduction/statistics/campaign_formula_v7_20260914/paired_contrasts.csv",
-      "reference_sha256": "f251e72d2c93f4a594e02f199ca01458e49bbb80d1fe55f925364b904c2bdca8",
-      "output_sha256": "f251e72d2c93f4a594e02f199ca01458e49bbb80d1fe55f925364b904c2bdca8",
+      "reference_sha256": "2fa14d875e0fc9338f647b17285ddb72e309ec3525ba7238a51b5c7d084fe2ab",
+      "output_sha256": "2fa14d875e0fc9338f647b17285ddb72e309ec3525ba7238a51b5c7d084fe2ab",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
       "passed": true
     },
     {
       "reference": "code/results/strict/network_stress_formula_v4_20260914/analysis/verified_runs.csv",
       "output": "reproduction/statistics/network_stress_formula_v4_20260914/verified_runs.csv",
+      "reference_sha256": "2340ad0002df73d02e85577628d40b7270131c69a3f04d2e374ec69a8cc9e4c5",
+      "output_sha256": "2340ad0002df73d02e85577628d40b7270131c69a3f04d2e374ec69a8cc9e4c5",
+      "comparison": "all rows, columns, labels and numerical values within 1e-12",
+      "passed": true
+    },
+    {
+      "reference": "code/results/strict/network_stress_formula_v4_20260914/analysis/reported_runs.csv",
+      "output": "reproduction/statistics/network_stress_formula_v4_20260914/reported_runs.csv",
       "reference_sha256": "2340ad0002df73d02e85577628d40b7270131c69a3f04d2e374ec69a8cc9e4c5",
       "output_sha256": "2340ad0002df73d02e85577628d40b7270131c69a3f04d2e374ec69a8cc9e4c5",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
@@ -323,6 +339,14 @@
       "passed": true
     },
     {
+      "reference": "code/results/strict/load_scaling_formula_v2_20260914/analysis/reported_runs.csv",
+      "output": "reproduction/statistics/load_scaling_formula_v2_20260914/reported_runs.csv",
+      "reference_sha256": "782042c5d81d6a3e5a0aa7dd79187c392c23bcf0b2c0880a52fd5abfb5026714",
+      "output_sha256": "782042c5d81d6a3e5a0aa7dd79187c392c23bcf0b2c0880a52fd5abfb5026714",
+      "comparison": "all rows, columns, labels and numerical values within 1e-12",
+      "passed": true
+    },
+    {
       "reference": "code/results/strict/load_scaling_formula_v2_20260914/analysis/descriptive_summary.csv",
       "output": "reproduction/statistics/load_scaling_formula_v2_20260914/descriptive_summary.csv",
       "reference_sha256": "4af7662493774d4e75f2ed71d38715b90638777aa77195b1729215280eb0ec0f",
@@ -341,6 +365,14 @@
     {
       "reference": "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/verified_runs.csv",
       "output": "reproduction/statistics/deadline_guard_network_stress_v4_20260914/verified_runs.csv",
+      "reference_sha256": "436a8a3ac53de9ac34ab9be466c5c73bbc66567df7407597e25b78af935346a8",
+      "output_sha256": "436a8a3ac53de9ac34ab9be466c5c73bbc66567df7407597e25b78af935346a8",
+      "comparison": "all rows, columns, labels and numerical values within 1e-12",
+      "passed": true
+    },
+    {
+      "reference": "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/reported_runs.csv",
+      "output": "reproduction/statistics/deadline_guard_network_stress_v4_20260914/reported_runs.csv",
       "reference_sha256": "436a8a3ac53de9ac34ab9be466c5c73bbc66567df7407597e25b78af935346a8",
       "output_sha256": "436a8a3ac53de9ac34ab9be466c5c73bbc66567df7407597e25b78af935346a8",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
@@ -371,6 +403,14 @@
       "passed": true
     },
     {
+      "reference": "code/results/strict/breakdown_formula_v1_20260914/analysis/reported_runs.csv",
+      "output": "reproduction/statistics/breakdown_formula_v1_20260914/reported_runs.csv",
+      "reference_sha256": "babd525ac0bac77e9f4ca1fa16138c4acb5907c64695e838679dbb4f9881973b",
+      "output_sha256": "babd525ac0bac77e9f4ca1fa16138c4acb5907c64695e838679dbb4f9881973b",
+      "comparison": "all rows, columns, labels and numerical values within 1e-12",
+      "passed": true
+    },
+    {
       "reference": "code/results/strict/breakdown_formula_v1_20260914/analysis/descriptive_summary.csv",
       "output": "reproduction/statistics/breakdown_formula_v1_20260914/descriptive_summary.csv",
       "reference_sha256": "4d5c5662b3e3808bfd3cf9a20452ffd46b93d05a53837c16472a848922ffdf2f",
@@ -389,6 +429,14 @@
     {
       "reference": "code/results/strict/measured_startup_strict_v1_20260914/analysis/verified_runs.csv",
       "output": "reproduction/statistics/measured_startup_strict_v1_20260914/verified_runs.csv",
+      "reference_sha256": "264970775845fefdd6f2b982748b28e4358247473c8931e59a437636b751128a",
+      "output_sha256": "264970775845fefdd6f2b982748b28e4358247473c8931e59a437636b751128a",
+      "comparison": "all rows, columns, labels and numerical values within 1e-12",
+      "passed": true
+    },
+    {
+      "reference": "code/results/strict/measured_startup_strict_v1_20260914/analysis/reported_runs.csv",
+      "output": "reproduction/statistics/measured_startup_strict_v1_20260914/reported_runs.csv",
       "reference_sha256": "264970775845fefdd6f2b982748b28e4358247473c8931e59a437636b751128a",
       "output_sha256": "264970775845fefdd6f2b982748b28e4358247473c8931e59a437636b751128a",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
@@ -551,6 +599,14 @@
       "output": "reproduction/statistics/factorial/paired_effects.csv",
       "reference_sha256": "2f2b318a08eb9e01c37739bf8957c5d4297e35cbeb7f88afd89dd0c8ae366efb",
       "output_sha256": "2f2b318a08eb9e01c37739bf8957c5d4297e35cbeb7f88afd89dd0c8ae366efb",
+      "comparison": "all rows, columns, labels and numerical values within 1e-12",
+      "passed": true
+    },
+    {
+      "reference": "code/results/r2/simulation_factorial_20261105/analysis/reported_runs.csv",
+      "output": "reproduction/statistics/factorial/reported_runs.csv",
+      "reference_sha256": "a36a8218fd4699ec2982bc8a70722f07f437315d2259aa4d2b1c6c6a3014b7e7",
+      "output_sha256": "a36a8218fd4699ec2982bc8a70722f07f437315d2259aa4d2b1c6c6a3014b7e7",
       "comparison": "all rows, columns, labels and numerical values within 1e-12",
       "passed": true
     },
@@ -932,7 +988,7 @@
       {
         "file": "fig1_architecture.pdf",
         "reference_sha256": "37fc3e97938b8af8d82b0d716b5d5264c20bb14939af944e2248f3c89b207762",
-        "recomputed_sha256": "3b5effed9b700ccd95ebe97f78b7de6837009a7a39ced1b99efb60762c7604e9",
+        "recomputed_sha256": "46fbf672e4b288b25f9cc2207f9d93eeb65d87b753e4c850144d2e393ce17a59",
         "pages": [
           {
             "page": 1,
@@ -946,7 +1002,7 @@
       {
         "file": "fig2_primary.pdf",
         "reference_sha256": "a9af48a4bb7fd668f81112602aa19bca5c0dff91495b24ae431e762779c0ee92",
-        "recomputed_sha256": "f1998675358e62c2df9f85aa5171d9c619ece7072a97cc16b4c984149039d4b0",
+        "recomputed_sha256": "913b4de221a3b09c45994793bf615d5ebe6101f066f8532dbaa1aad677bb0f70",
         "pages": [
           {
             "page": 1,
@@ -960,7 +1016,7 @@
       {
         "file": "fig3_sampling_cache.pdf",
         "reference_sha256": "b378786049003a6097dbfe11779d7b7aada89a30d2e9a87309ce4a250444c61b",
-        "recomputed_sha256": "b0623aba19944cb00a4a8abfc57e5b3310b73c43fcedc97f3165e6545fc7e735",
+        "recomputed_sha256": "c1753df3344bbea400fc2962d135e36ca265075f3bd2f805642f8a17aa216f3c",
         "pages": [
           {
             "page": 1,
@@ -974,7 +1030,7 @@
       {
         "file": "fig4_effects_stress.pdf",
         "reference_sha256": "84fa9c4419bdf683ef6cc6c038c53c622f02124664fcc6336d3697e784deb24a",
-        "recomputed_sha256": "a95ee94cc4c5cd7578682e25a9fdfd7d2ec3851a3024c78341824b06f6b0f312",
+        "recomputed_sha256": "5ed3d6858234a71ba85ad6188f8a3d99b9fecd466f31a4b23377ba6259a174b5",
         "pages": [
           {
             "page": 1,
@@ -988,7 +1044,7 @@
       {
         "file": "figS_breakdown.pdf",
         "reference_sha256": "fc2d8537a6272a1de396f79fc563fda196eee7381834422da6bcb6c4c90c25bd",
-        "recomputed_sha256": "a73feff32df0e66087f9f1a2e5edab0acd6c4f98323a0e8943e9d5985d7fa150",
+        "recomputed_sha256": "421da42326b7c3cf57883c816b5a00d619c0a584a3769e388e41ab08444643b2",
         "pages": [
           {
             "page": 1,
@@ -1002,7 +1058,7 @@
       {
         "file": "figS_load_scaling.pdf",
         "reference_sha256": "5575c30b7c9c5ad66086037113f5140ca51598812109cbc496801d6307887ce3",
-        "recomputed_sha256": "21f927969509a9d1d718a0bb0c99825e55e4c9f694c6df1b636e42ff8b9ef743",
+        "recomputed_sha256": "adebbf209124546a083459b9652e055a16ee8005d1cecb563e507fd65e897bd1",
         "pages": [
           {
             "page": 1,
@@ -1016,7 +1072,7 @@
       {
         "file": "fig_container_startup.pdf",
         "reference_sha256": "5e85b384f3cd2daeb8145ac3a909d3a38ec6e012ade55905dd08317a26adbbdd",
-        "recomputed_sha256": "29cfe30cf21b5402afa320a5e7efa9922f012a8c9df770785431e05c53f79c17",
+        "recomputed_sha256": "ead2d8cf1aa364e329731904fd191cca7467e8a82e7c2ec33493bb14d760045e",
         "pages": [
           {
             "page": 1,
@@ -1030,7 +1086,7 @@
       {
         "file": "fig_physical_scheduler.pdf",
         "reference_sha256": "0cba611c7f1e0bda26ce7ade5cb4d9f558a88336e2da08315690e3f53fe3dd06",
-        "recomputed_sha256": "76b784b46c460ca7cc80162f1b309382a23281b88665339ef653d86adc5ed2eb",
+        "recomputed_sha256": "47d34e5789d7fd1e37df4e2332fe7623b230cad1344b8b50de79536148f93a0e",
         "pages": [
           {
             "page": 1,
@@ -1044,7 +1100,7 @@
       {
         "file": "physical_calibration.pdf",
         "reference_sha256": "badaabbe0b73909c11f3b005ce728683fb7245b73270ad6251b7053d429a1301",
-        "recomputed_sha256": "110346821175f2e38e5d2783a660d753ac06e4bf64b282edc1a0807130c4e39c",
+        "recomputed_sha256": "317106ce29fa8f93792fddc3e3b4912da3f28a572d92a9f4c51d22853277500a",
         "pages": [
           {
             "page": 1,
@@ -8605,19 +8661,19 @@
       "checks": 49,
       "passed": 49,
       "failed": 0,
-      "report_sha256": "d9ed803752c6b3289544c7e11f1666c444172523bb160b69b2930850651053af"
+      "report_sha256": "18252f72da101154f130cd23b622ca4eb2e0fab7cceeb54ff96ceb738086e73f"
     },
     "r2": {
       "status": "PASS",
       "checks": 44,
       "passed": 44,
       "failed": 0,
-      "report_sha256": "1177b6bdf47e805db13d422db337ee9ee1809d5289cbc9c16a1ac9b598d8670a"
+      "report_sha256": "2e8d9dfbf1a8faa2c6d9aa4801c4fa609f918e0b5d53b8408d3a6550cd1868ea"
     }
   },
   "full_training_verification": {
     "complete": true,
-    "utc": "2026-11-06T01:50:53.559779+00:00",
+    "utc": "2026-11-06T04:02:30.821407+00:00",
     "source_sha256": {
       "__init__.py": "681b65a3defe0b1bad17fdc6539937422fb6376f266e9e79de62260af834a5ed",
       "train_r2_workloads.py": "6631d02c4f28467eb62261f8dc76bca6e9b4a708db94691e51af098720925a7e",
@@ -8660,5 +8716,5 @@
     "heldout_examples": 450
   },
   "evidence_policy": "Full archived result and raw-hardware reanalysis with source-isolated R1 analyses. No live hardware rerun or partial matrix is substituted.",
-  "script_sha256": "8903a8ae7c0831ab565d577df98b3f0ab300b52d7021b0b37472e4340a5424a5"
+  "script_sha256": "328e3370ead7baf23e9626969f4b57914e861f5c76c0c33d013aea23f90644fa"
 }

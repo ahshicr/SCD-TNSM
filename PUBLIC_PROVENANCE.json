@@ -4,10 +4,10 @@
   "files": [
     {
       "path": "CITATION.cff",
-      "original_sha256": "264093e06226fc8c5abf83ad633e6a8d08cb0f8f49442b4af94452398044e7d2",
-      "public_sha256": "264093e06226fc8c5abf83ad633e6a8d08cb0f8f49442b4af94452398044e7d2",
-      "source_bytes": 614,
-      "public_bytes": 614,
+      "original_sha256": "b83f067fb2553dd90b08a169168505834c8cf4c1ef0955efa285184e5c48c060",
+      "public_sha256": "b83f067fb2553dd90b08a169168505834c8cf4c1ef0955efa285184e5c48c060",
+      "source_bytes": 634,
+      "public_bytes": 634,
       "transformation": "byte_identical"
     },
     {
@@ -16,6 +16,14 @@
       "public_sha256": "9b1ad2dacb450011e1014ea6ad40870edc019f4d2e060a677cdc355a6f68c907",
       "source_bytes": 1946,
       "public_bytes": 1946,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "CORRECTION-v2.0.2.md",
+      "original_sha256": "d7ed8871afab908df05d538fe79c1bbaf101cbe9d44cef60d9ad6788492c99eb",
+      "public_sha256": "d7ed8871afab908df05d538fe79c1bbaf101cbe9d44cef60d9ad6788492c99eb",
+      "source_bytes": 2249,
+      "public_bytes": 2249,
       "transformation": "byte_identical"
     },
     {
@@ -36,10 +44,10 @@
     },
     {
       "path": "README.md",
-      "original_sha256": "051d3f7f8be1263f85403794e7feff4b9a10d0bc5836ee3855f8c84dfc050cf2",
-      "public_sha256": "051d3f7f8be1263f85403794e7feff4b9a10d0bc5836ee3855f8c84dfc050cf2",
-      "source_bytes": 5107,
-      "public_bytes": 5107,
+      "original_sha256": "96c1c9df164365b25d1fe2a6c76dea52cc54cd7964b0925ba515c182490fa975",
+      "public_sha256": "96c1c9df164365b25d1fe2a6c76dea52cc54cd7964b0925ba515c182490fa975",
+      "source_bytes": 5409,
+      "public_bytes": 5409,
       "transformation": "byte_identical"
     },
     {
@@ -7488,6 +7496,14 @@
       "public_sha256": "a141dfc2bbbce73da4088d3cf421cb192259683a86c0439cc07a64c92f63c145",
       "source_bytes": 12849,
       "public_bytes": 12849,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/results/r2/conditional_denominator_correction_v202.json",
+      "original_sha256": "9bc8f0575b26ea1cb499df615ae567640a425f653a1980f8099b7ba46101156e",
+      "public_sha256": "9bc8f0575b26ea1cb499df615ae567640a425f653a1980f8099b7ba46101156e",
+      "source_bytes": 47605,
+      "public_bytes": 47605,
       "transformation": "byte_identical"
     },
     {
@@ -17732,8 +17748,8 @@
     },
     {
       "path": "code/results/r2/simulation_factorial_20261105/analysis/audit.json",
-      "original_sha256": "ddc6d19ca1345623b68ca307a28945d6024d9b439ef881ea2902cf92a16bdb5c",
-      "public_sha256": "ddc6d19ca1345623b68ca307a28945d6024d9b439ef881ea2902cf92a16bdb5c",
+      "original_sha256": "481e5c4878d66f904040cb396b1c1877249d65bf075929a93abb8c6e024b255a",
+      "public_sha256": "481e5c4878d66f904040cb396b1c1877249d65bf075929a93abb8c6e024b255a",
       "source_bytes": 21643,
       "public_bytes": 21643,
       "transformation": "byte_identical"
@@ -17760,6 +17776,14 @@
       "public_sha256": "2bf6d4fcc34474a98ba9c788075856ac802898a8282512f0e2f696fdf02cbaf3",
       "source_bytes": 10044,
       "public_bytes": 10044,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/results/r2/simulation_factorial_20261105/analysis/reported_runs.csv",
+      "original_sha256": "a36a8218fd4699ec2982bc8a70722f07f437315d2259aa4d2b1c6c6a3014b7e7",
+      "public_sha256": "a36a8218fd4699ec2982bc8a70722f07f437315d2259aa4d2b1c6c6a3014b7e7",
+      "source_bytes": 316565,
+      "public_bytes": 316565,
       "transformation": "byte_identical"
     },
     {
@@ -41212,10 +41236,10 @@
     },
     {
       "path": "code/results/strict/breakdown_formula_v1_20260914/analysis/audit_and_summary.json",
-      "original_sha256": "0e622a44bb8cca4822a770f0c44d2451c2879fbbd006b5734dabfdadb811843b",
-      "public_sha256": "f8c21b42e5be40005d83aac13fc68697e624d84029dd9df55b3f1f0fcb2bf4fa",
-      "source_bytes": 2762,
-      "public_bytes": 2336,
+      "original_sha256": "d0a0a4def5ab05d49b6a1520d6bbb64b714bba46dc99ab888f10315acc37c83b",
+      "public_sha256": "7bcabb99b8963bef4f75d5b0f3b5a5fbde9c26e45be36675a4f2efe9572b4b2d",
+      "source_bytes": 3012,
+      "public_bytes": 2684,
       "transformation": "deployment_redaction_or_portable_path_serialization"
     },
     {
@@ -41232,6 +41256,14 @@
       "public_sha256": "55f738bc70562420d709710e369bd6b87a8c774001395cdb7d5b2e1934de02fd",
       "source_bytes": 82760,
       "public_bytes": 82760,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/results/strict/breakdown_formula_v1_20260914/analysis/reported_runs.csv",
+      "original_sha256": "babd525ac0bac77e9f4ca1fa16138c4acb5907c64695e838679dbb4f9881973b",
+      "public_sha256": "babd525ac0bac77e9f4ca1fa16138c4acb5907c64695e838679dbb4f9881973b",
+      "source_bytes": 389768,
+      "public_bytes": 389768,
       "transformation": "byte_identical"
     },
     {
@@ -42580,26 +42612,34 @@
     },
     {
       "path": "code/results/strict/campaign_formula_v7_20260914/analysis/audit_and_summary.json",
-      "original_sha256": "8f67fc28f531777a275e4c594b291713e7b3df5f1d4ffb5fd5c401d1572e4520",
-      "public_sha256": "a725916af387b1ae54c75fdd8104df2e9b1bd9fd6d07037b9a26216b6b3cda47",
-      "source_bytes": 2556,
-      "public_bytes": 2144,
+      "original_sha256": "fbef347bd3c1ef9338e3cf07f01a59a40889b967b5cdde029c787b7f27dc4f07",
+      "public_sha256": "e3c4cc4d4d8723af4572e5e1d4c5d8abb8b1f3f50a1e34b96108fcca8581610e",
+      "source_bytes": 2807,
+      "public_bytes": 2493,
       "transformation": "deployment_redaction_or_portable_path_serialization"
     },
     {
       "path": "code/results/strict/campaign_formula_v7_20260914/analysis/descriptive_summary.csv",
-      "original_sha256": "fd1e3b1b238bfe79eed5a509d3bc90e0becc3c35d7188b6735348f8a78ce93ce",
-      "public_sha256": "fd1e3b1b238bfe79eed5a509d3bc90e0becc3c35d7188b6735348f8a78ce93ce",
-      "source_bytes": 296997,
-      "public_bytes": 296997,
+      "original_sha256": "9e21cd14e5f5e6477b49d6296bb83273ce6d53f6b8b8c3f9ab24f02131e0840b",
+      "public_sha256": "9e21cd14e5f5e6477b49d6296bb83273ce6d53f6b8b8c3f9ab24f02131e0840b",
+      "source_bytes": 296853,
+      "public_bytes": 296853,
       "transformation": "byte_identical"
     },
     {
       "path": "code/results/strict/campaign_formula_v7_20260914/analysis/paired_contrasts.csv",
-      "original_sha256": "f251e72d2c93f4a594e02f199ca01458e49bbb80d1fe55f925364b904c2bdca8",
-      "public_sha256": "f251e72d2c93f4a594e02f199ca01458e49bbb80d1fe55f925364b904c2bdca8",
-      "source_bytes": 665852,
-      "public_bytes": 665852,
+      "original_sha256": "2fa14d875e0fc9338f647b17285ddb72e309ec3525ba7238a51b5c7d084fe2ab",
+      "public_sha256": "2fa14d875e0fc9338f647b17285ddb72e309ec3525ba7238a51b5c7d084fe2ab",
+      "source_bytes": 664255,
+      "public_bytes": 664255,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/results/strict/campaign_formula_v7_20260914/analysis/reported_runs.csv",
+      "original_sha256": "b7c770db49a439d236db2130cd0275d74a3eef1821c2e0a57c8b76b28874208a",
+      "public_sha256": "b7c770db49a439d236db2130cd0275d74a3eef1821c2e0a57c8b76b28874208a",
+      "source_bytes": 1516236,
+      "public_bytes": 1516236,
       "transformation": "byte_identical"
     },
     {
@@ -47652,10 +47692,10 @@
     },
     {
       "path": "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/audit_and_summary.json",
-      "original_sha256": "f4256e7a3837e029a7cb1393377689e5e0dd171bc4cdbf91693ab4e9bd03174d",
-      "public_sha256": "2881a9f81863f6cec6147598690755d5bd421b5c74f58190f999ed57e8b9be9b",
-      "source_bytes": 2781,
-      "public_bytes": 2355,
+      "original_sha256": "e810485603bf652737349aedb6359acc4134c8be2867fa16b421bf41fe227d2f",
+      "public_sha256": "7e684b734728f2d4b6ea0820ba4821f13ec534c7d55b04eb5b73e18da8aabe6b",
+      "source_bytes": 3031,
+      "public_bytes": 2703,
       "transformation": "deployment_redaction_or_portable_path_serialization"
     },
     {
@@ -47672,6 +47712,14 @@
       "public_sha256": "82e1abdf7c519aa2ed9547b81c0b00fce2b9b39174a5dffa40a951f94d9d6553",
       "source_bytes": 33128,
       "public_bytes": 33128,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/results/strict/deadline_guard_network_stress_v4_20260914/analysis/reported_runs.csv",
+      "original_sha256": "436a8a3ac53de9ac34ab9be466c5c73bbc66567df7407597e25b78af935346a8",
+      "public_sha256": "436a8a3ac53de9ac34ab9be466c5c73bbc66567df7407597e25b78af935346a8",
+      "source_bytes": 152533,
+      "public_bytes": 152533,
       "transformation": "byte_identical"
     },
     {
@@ -48204,10 +48252,10 @@
     },
     {
       "path": "code/results/strict/load_scaling_formula_v2_20260914/analysis/audit_and_summary.json",
-      "original_sha256": "e1475d09300890d51b112361c92a1a47cb5596663880e450dea5d489f51cbbcc",
-      "public_sha256": "fafaca13f30265dc040bb38f3a00de7d41d1624f7bfa72e0b3c16f016ac91704",
-      "source_bytes": 2768,
-      "public_bytes": 2342,
+      "original_sha256": "06c9f2c0415887e586d57aac35cfa996e860feb209fa1b24b5a2c0e9bd8a76bd",
+      "public_sha256": "0c04709db466aef47f36a9d417600a9ab94eb25a8912c617a7fcfca43f90f9c7",
+      "source_bytes": 3018,
+      "public_bytes": 2690,
       "transformation": "deployment_redaction_or_portable_path_serialization"
     },
     {
@@ -48224,6 +48272,14 @@
       "public_sha256": "861fa6c2d6a16263d0b879bc771cff34887bf6cf4672ac7dd3396221cdb7097c",
       "source_bytes": 16125,
       "public_bytes": 16125,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/results/strict/load_scaling_formula_v2_20260914/analysis/reported_runs.csv",
+      "original_sha256": "782042c5d81d6a3e5a0aa7dd79187c392c23bcf0b2c0880a52fd5abfb5026714",
+      "public_sha256": "782042c5d81d6a3e5a0aa7dd79187c392c23bcf0b2c0880a52fd5abfb5026714",
+      "source_bytes": 75399,
+      "public_bytes": 75399,
       "transformation": "byte_identical"
     },
     {
@@ -48492,10 +48548,10 @@
     },
     {
       "path": "code/results/strict/measured_startup_strict_v1_20260914/analysis/audit_and_summary.json",
-      "original_sha256": "3c15ffbe8632f0412c37d52f968fa2a9120dce709a6371debc54e6806dec028b",
-      "public_sha256": "3b78363c5407740fe625598028868428cce78491d65e9d29133fbd84d2c53be6",
-      "source_bytes": 2774,
-      "public_bytes": 2348,
+      "original_sha256": "b0452850e05ace5788e7871a11dac84d29a66a0d32ad6302fd53ce09d28eec04",
+      "public_sha256": "52f5e7ee9d18297c2cbe370047d6283593a119e1bbd2862df776d91cd3dbc091",
+      "source_bytes": 3024,
+      "public_bytes": 2696,
       "transformation": "deployment_redaction_or_portable_path_serialization"
     },
     {
@@ -48512,6 +48568,14 @@
       "public_sha256": "ee210301d039252de99959d03396d459e036c90710a7c8b369aa161886bd0990",
       "source_bytes": 106770,
       "public_bytes": 106770,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/results/strict/measured_startup_strict_v1_20260914/analysis/reported_runs.csv",
+      "original_sha256": "264970775845fefdd6f2b982748b28e4358247473c8931e59a437636b751128a",
+      "public_sha256": "264970775845fefdd6f2b982748b28e4358247473c8931e59a437636b751128a",
+      "source_bytes": 463578,
+      "public_bytes": 463578,
       "transformation": "byte_identical"
     },
     {
@@ -49980,10 +50044,10 @@
     },
     {
       "path": "code/results/strict/network_stress_formula_v4_20260914/analysis/audit_and_summary.json",
-      "original_sha256": "f5403403ef13e7dcb56e194c170ff1e4b11cd8fbfcb717ae4f03cc7bc3e0fb5a",
-      "public_sha256": "c3f4b7626a425d6f9768712a7d2ad12591f1425cfa12fefeae4e9f7f6e4facb9",
-      "source_bytes": 2666,
-      "public_bytes": 2247,
+      "original_sha256": "5136844a8f5e2af7ad74c1fedb25a372f7f54489acbc42f99bce8b9e1e481bf7",
+      "public_sha256": "b6f216331dc59472f4dab0dbb413007281922aa93ceb3347baca841269d8ee98",
+      "source_bytes": 2916,
+      "public_bytes": 2595,
       "transformation": "deployment_redaction_or_portable_path_serialization"
     },
     {
@@ -50000,6 +50064,14 @@
       "public_sha256": "caf009dd68c211d79479a1414b3b01991d28486d34eb6db589620f34e456ae0b",
       "source_bytes": 60099,
       "public_bytes": 60099,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/results/strict/network_stress_formula_v4_20260914/analysis/reported_runs.csv",
+      "original_sha256": "2340ad0002df73d02e85577628d40b7270131c69a3f04d2e374ec69a8cc9e4c5",
+      "public_sha256": "2340ad0002df73d02e85577628d40b7270131c69a3f04d2e374ec69a8cc9e4c5",
+      "source_bytes": 192142,
+      "public_bytes": 192142,
       "transformation": "byte_identical"
     },
     {
@@ -51724,10 +51796,10 @@
     },
     {
       "path": "code/src/analyze_r2_simulations.py",
-      "original_sha256": "58b224a1ecad430d4c0271c27e66aef8027b6dc8b71887f565db940717878dbe",
-      "public_sha256": "58b224a1ecad430d4c0271c27e66aef8027b6dc8b71887f565db940717878dbe",
-      "source_bytes": 13871,
-      "public_bytes": 13871,
+      "original_sha256": "d1625b22781601b4c9f937052229e74355da70acfb9576d6c2aff4798da9f6e6",
+      "public_sha256": "d1625b22781601b4c9f937052229e74355da70acfb9576d6c2aff4798da9f6e6",
+      "source_bytes": 14060,
+      "public_bytes": 14060,
       "transformation": "byte_identical"
     },
     {
@@ -52348,10 +52420,10 @@
     },
     {
       "path": "code/src/summarize_strict_campaign.py",
-      "original_sha256": "1c82385a5f49367abfceeeb07fcfe31271a9f68fc68efd028a7d76b99a942507",
-      "public_sha256": "1c82385a5f49367abfceeeb07fcfe31271a9f68fc68efd028a7d76b99a942507",
-      "source_bytes": 16872,
-      "public_bytes": 16872,
+      "original_sha256": "d3b15a99aa74abb23c36dafeab2dd678fb20d8f957e0958a7256dab477479575",
+      "public_sha256": "d3b15a99aa74abb23c36dafeab2dd678fb20d8f957e0958a7256dab477479575",
+      "source_bytes": 18763,
+      "public_bytes": 18763,
       "transformation": "byte_identical"
     },
     {
@@ -52416,6 +52488,14 @@
       "public_sha256": "1cbb86eab29a26bc19c9acf7648b45e0fc840ed08be2529f06584d36655dbb04",
       "source_bytes": 1254,
       "public_bytes": 1254,
+      "transformation": "byte_identical"
+    },
+    {
+      "path": "code/tests/test_conditional_denominators.py",
+      "original_sha256": "6369c73caae1c13d59a5be14b7d63211768d4eff088c6178f85cc2fb696a0a10",
+      "public_sha256": "6369c73caae1c13d59a5be14b7d63211768d4eff088c6178f85cc2fb696a0a10",
+      "source_bytes": 2062,
+      "public_bytes": 2062,
       "transformation": "byte_identical"
     },
     {
@@ -52692,10 +52772,10 @@
     },
     {
       "path": "code/verify_release.py",
-      "original_sha256": "8903a8ae7c0831ab565d577df98b3f0ab300b52d7021b0b37472e4340a5424a5",
-      "public_sha256": "8903a8ae7c0831ab565d577df98b3f0ab300b52d7021b0b37472e4340a5424a5",
-      "source_bytes": 10390,
-      "public_bytes": 10390,
+      "original_sha256": "328e3370ead7baf23e9626969f4b57914e861f5c76c0c33d013aea23f90644fa",
+      "public_sha256": "328e3370ead7baf23e9626969f4b57914e861f5c76c0c33d013aea23f90644fa",
+      "source_bytes": 10410,
+      "public_bytes": 10410,
       "transformation": "byte_identical"
     },
     {
@@ -53416,5 +53496,5 @@
       ]
     }
   ],
-  "statistical_correction": "v2.0.1. Only derived multiplicity statistics and their implementation change. All original execution sources, run records and measurements remain unchanged."
+  "statistical_correction": "v2.0.2 includes the v2.0.1 multiplicity correction and explicit missing conditional ratios at zero admission. Frozen execution sources, run records and measurements are unchanged."
 }

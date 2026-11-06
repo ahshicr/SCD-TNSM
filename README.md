@@ -9,23 +9,25 @@ component, allocation, common-constraint hardware, and actual-switch studies.
 
 ## Get the complete evidence
 
-Tagged release: [v2.0.1](https://github.com/ahshicr/SCD-TNSM/releases/tag/v2.0.1).
+Tagged release: [v2.0.2](https://github.com/ahshicr/SCD-TNSM/releases/tag/v2.0.2).
 
 The source repository and the evidence archives are complementary. Download
 the assets listed in `EVIDENCE_ASSETS.json` using each entry's `download_url`,
 verify their SHA-256 digests, and extract them into the repository root **in
 the listed order**. First extract the seven immutable v2.0.0 evidence archives.
-Then extract the v2.0.1 statistical correction ZIP, allowing it to replace
+Then extract the v2.0.2 statistical correction ZIP, allowing it to replace
 the listed derived statistical files. The final overlay is required. Original
 trial logs and simulation records are unchanged. Ordinary ZIP extraction is sufficient.
 The source archive is also supplied for users who do not use Git.
 
-Version 2.0.1 corrects the multiplicity family in the retained simulation
-analysis. Zero or undefined stochastic contrasts now contribute conservative
-`p=1` instead of being omitted. Single-reconstruction controls remain
-descriptive. See [the correction record](CORRECTION-v2.0.1.md) for the exact
-scope and changes in significance. Means, intervals, figures and source
-measurements remain unchanged.
+Version 2.0.2 marks admission-conditional ratios as unavailable when no
+request is admitted, retains undefined tests as `p=1` in the full family,
+and rejects incomplete finite replicate sets. The seven campaigns include
+`analysis/reported_runs.csv` for statistics and preserve the raw acquisition
+records. See [the conditional-denominator correction](CORRECTION-v2.0.2.md)
+and [the earlier multiplicity correction](CORRECTION-v2.0.1.md) for the exact
+scope. The v2.0.2 overlay includes both corrections. Numerical outcomes for
+valid denominators, the primary claims, and plotted values are unchanged.
 
 `MANIFEST.sha256` identifies the distributed files. `PUBLIC_PROVENANCE.json`
 records acquisition-origin and public-file hashes, including deployment

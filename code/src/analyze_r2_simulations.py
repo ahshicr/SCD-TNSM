@@ -7,6 +7,7 @@ import math
 import numpy as np
 import pandas as pd
 from scipy.stats import t, ttest_1samp
+from src.summarize_strict_campaign import normalize_conditional_metrics
 ROOT=Path(__file__).resolve().parents[1]
 RUN=ROOT/'results/r2/simulation_factorial_20261105'
 OUT=RUN/'analysis'
@@ -76,6 +77,8 @@ def main():
     if not completion['complete'] or len(data)!=200 or set(data.key)!=set(x['key'] for x in protocol['tasks']):
         raise AssertionError('Incomplete or unregistered runs')
     raw_hashes=validate_sources(data,protocol)
+    data=normalize_conditional_metrics(data)
+    data.sort_values('key').to_csv(OUT/'reported_runs.csv',index=False)
     old=pd.read_csv(BASELINE)
     regressions=[]
     for method in ['scd','dpp_matched','compute_first']:

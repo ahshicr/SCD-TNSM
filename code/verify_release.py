@@ -98,7 +98,7 @@ def main():
         audit=json.loads((current/'audit_and_summary.json').read_text(encoding='utf-8'))
         if audit['status']!='PASS':
             raise AssertionError('Original campaign conservation/provenance audit failed')
-        for file in ['verified_runs.csv','descriptive_summary.csv','paired_contrasts.csv']:
+        for file in ['verified_runs.csv','reported_runs.csv','descriptive_summary.csv','paired_contrasts.csv']:
             compare(reference/'analysis'/file,current/file)
         # The generated verified records are loaded from every raw run JSON.
         verified=pd.read_csv(current/'verified_runs.csv').sort_values('key').reset_index(drop=True)
